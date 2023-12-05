@@ -36,7 +36,7 @@ https://github.com/leurekay/ros-install-one-click
   - roslaunch marm_moviet_config demo.launch    #在rviz中拖动机械臂，planning+excute,界面中的机械臂可以运动到指定点
   - roslunch pro......    #让机械臂末端在rviz中画圆
 - 上位机ros订阅其他节点发布的 joint_state,得到各个关节的角度，从而通过串口控制真实的机械臂。
-  - rosrun ..........
+  - rosrun real_arm nanoarm_bringup.py
 
 
 ## 视觉
