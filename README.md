@@ -27,7 +27,19 @@ https://github.com/leurekay/ros-install-one-click
   - aaaa
   - bbbb
 - 启动编写好的launch文件，
-  
+
+### 控制真实的机械臂
+- 单片机上写好通过通过串口，控制各个舵机转动角度的程序
+- 启动一个包含发布机械臂各关节角度的程序，例如：
+  - roslaunch marm_moviet_config demo.launch    #在rviz中拖动机械臂，planning+excute,界面中的机械臂可以运动到指定点
+  - roslunch pro......    #让机械臂末端在rviz中画圆
+- 上位机ros订阅其他节点发布的 joint_state,得到各个关节的角度，从而通过串口控制真实的机械臂。
+  - rosrun ..........
+
+
+## 视觉
+
+## 手眼标定
 
 
 
