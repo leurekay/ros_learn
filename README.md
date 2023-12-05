@@ -7,9 +7,10 @@
 https://github.com/leurekay/ros-install-one-click
 
 ## 基本操作
-### 创建工作空间
-
-### 创建功能包
+- 创建工作空间
+- 创建功能包
+- 查看所有topic
+  
 
 
 ## 机械臂
@@ -22,6 +23,7 @@ https://github.com/leurekay/ros-install-one-click
 - 启动Setup Assistant,导入urdf文件进行配置
   - aaaa
   - bbbb
+  - group,机械臂和夹住是两个不同的组
 - 生成***_moveit_config目录
   包含：
   - aaaa
@@ -43,7 +45,7 @@ https://github.com/leurekay/ros-install-one-click
 
 ### 内参标定
 
-## 手眼标定
+### 手眼标定
 
 
 
