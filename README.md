@@ -1,9 +1,9 @@
 # ros_learn
 
-## Install
+## 安装ROS
 
 ### ros + moveit
-
+参考脚本一键安装
 https://github.com/leurekay/ros-install-one-click
 
 ## 基本操作
@@ -19,6 +19,15 @@ https://github.com/leurekay/ros-install-one-click
 - 编写launch文件可视化展示
   
 ### moveit
+- 启动Setup Assistant,导入urdf文件进行配置
+  - aaaa
+  - bbbb
+- 生成***_moveit_config目录
+  包含：
+  - aaaa
+  - bbbb
+- 启动编写好的launch文件，
+  
 
 
 
