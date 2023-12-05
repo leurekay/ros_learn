@@ -40,10 +40,20 @@ https://github.com/leurekay/ros-install-one-click
 
 
 ## 视觉
+rqt_image_view
 
 ### 深度相机
+install qudong
 
 ### 内参标定
+install
+sudo apt install ros-noetic-camera-calibration
+
+launch camera:
+roslaunch probot_vision usb_cam.launch
+
+
+rosrun camera_calibration cameracalibrator.py  --size 8x6 --square 0.02 image:=/usb_cam/image_raw camera:=/usb_cam
 
 ### 手眼标定
 
