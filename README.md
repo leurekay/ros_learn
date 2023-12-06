@@ -9,6 +9,7 @@ https://github.com/leurekay/ros-install-one-click
 ## 基本操作
 - 创建工作空间
 - 创建功能包
+- catkin_make
 - 查看所有topic
 - rostopic echo /joint_states
   
@@ -22,9 +23,11 @@ https://github.com/leurekay/ros-install-one-click
   roslaunch marm_description  view_marm.launch
   
 ### moveit
-- 启动Setup Assistant,导入urdf文件进行配置
+- 启动Setup Assistant,导入urdf文件进行配置:rosrun moveit_setup_assistant moveit_setup_assistant
   - aaaa
-  - bbbb
+  - group
+    - solver:kdl
+    - ompl planning: rrt
   - group,机械臂和夹住是两个不同的组
 - 生成***_moveit_config目录
   包含：
