@@ -40,8 +40,10 @@ https://github.com/leurekay/ros-install-one-click
 - 启动一个包含发布机械臂各关节角度的程序，例如：
   - roslaunch marm_moveit_config demo.launch    #在rviz中拖动机械臂，planning+excute,界面中的机械臂可以运动到指定点
   - rosrun probot_demo moveit_circle_demo.py  #让机械臂末端在rviz中画圆
+  -          #吸盘版本，订阅其他节点发布的3d位置坐标，机械臂末端移动该位置
 - 上位机ros订阅其他节点发布的 joint_state,得到各个关节的角度，从而通过串口控制真实的机械臂。
   - rosrun real_arm nanoarm_bringup.py
+  - 吸盘版本 
 
 
 ## 视觉
@@ -61,6 +63,12 @@ roslaunch probot_vision usb_cam.launch
 rosrun camera_calibration cameracalibrator.py  --size 8x6 --square 0.02 image:=/usb_cam/image_raw camera:=/usb_cam
 
 ### 手眼标定
+#### 采集数据
+1.发布坐标位置话题，同时记录下末端link相对于base_link的tf,同时保存摄像头拍的标定版图片
+2.启动moveit移动到指定位置的程序
+3.启动控制真实的机械臂的节点
+
+#### AX=XB
 
 
 
