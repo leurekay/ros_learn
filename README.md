@@ -50,7 +50,10 @@ https://github.com/leurekay/ros-install-one-click
 rqt_image_view
 
 ### 深度相机
-install qudong
+#### install qudong
+#### launch
+roslaunch astra_camera astra.launch
+
 
 ### 内参标定
 install
