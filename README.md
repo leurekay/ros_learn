@@ -41,6 +41,7 @@ https://github.com/leurekay/ros-install-one-click
   - roslaunch marm_moveit_config demo.launch    #在rviz中拖动机械臂，planning+excute,界面中的机械臂可以运动到指定点
   - rosrun probot_demo moveit_circle_demo.py  #让机械臂末端在rviz中画圆
   - rosrun real_arm move_subscribe.py  #吸盘版本，订阅其他节点发布的3d位置坐标，机械臂末端移动该位置
+    - public coordinate (x,y,z) by command line: rostopic pub /move_coordinates geometry_msgs/Point '{x: -0.1, y: -0.05, z: 0.04}'
 - 上位机ros订阅其他节点发布的 joint_state,得到各个关节的角度，从而通过串口控制真实的机械臂。
   - rosrun real_arm nanoarm_bringup.py
   - rosrun real_arm sucker_bringup.py  #吸盘版本
