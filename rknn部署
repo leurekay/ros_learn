@@ -1,1 +1,15 @@
+# 打开机器人摄像头节点
+roslaunch robot_vision robot_camera.launch device:=video0 
 
+#启动目标检测节点
+rosrun object_detect yolo_rknn_lite_ros.py
+
+
+板卡端：rknn_server
+
+本地linux:
+adb connect 192.168.31.229:5555
+adb devices
+
+
+查看使用率：sudo cat /sys/kernel/debug/rknpu/load
